@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fluid>
+	<race>nhom_mech</race>
+
+	<transformationName><![CDATA[synthetic]]></transformationName>
+
+	<baseFluidType>MILK</baseFluidType>
+
+	<flavour>MILK</flavour>
+
+	<namesMasculine>
+		<name><![CDATA[synth-]]></name>
+	</namesMasculine>
+
+	<namesFeminine>
+		<name><![CDATA[synth-]]></name>
+	</namesFeminine>
+
+	<descriptorsMasculine>
+		<name><![CDATA[synthetic]]></name>
+	</descriptorsMasculine>
+
+	<descriptorsFeminine>
+		<name><![CDATA[synthetic]]></name>
+	</descriptorsFeminine>
+
+	<defaultFluidModifiers/>
+</fluid>

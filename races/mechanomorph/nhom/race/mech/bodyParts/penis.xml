@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<penis>
+	<race>nhom_mech</race>
+
+	<transformationName><![CDATA[synthetic]]></transformationName>
+
+	<coveringType>PENIS</coveringType>
+
+	<testicleType>nhom_mech_testicle</testicleType>
+
+	<additionalTransformationEffect/>
+
+	<namesMasculine/>
+	<namesPluralMasculine/>
+
+	<namesFeminine/>
+	<namesPluralFeminine/>
+
+	<descriptors/>
+
+	<defaultPenetrationModifiers>
+		<modifier>PREHENSILE</modifier>
+	</defaultPenetrationModifiers>
+
+	<transformationDescription><![CDATA[
+		Letting out an involuntary moan, [npc.name] [npc.verb(feel)] [npc.her] penis beginning to transform, and [npc.sheIs] hit by a wave of overwhelming arousal as a strong but flexible material coats [npc.her] shaft.
+		<br/>[npc.She] now [npc.has] a [style.boldHyena(synthetic penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
+		<br/>[npc.She] [npc.has] [style.boldHyena([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldHyena(synth-cum)].
+	]]></transformationDescription>
+
+	<bodyDescription><![CDATA[
+		[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] synthetic cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].
+	]]></bodyDescription>
+	
+</penis>

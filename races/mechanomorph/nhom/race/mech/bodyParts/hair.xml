@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<hair>
+	<race>nhom_mech</race>
+
+	<transformationName><![CDATA[synthetic]]></transformationName>
+
+	<coveringType>nhom_mech_hair</coveringType>
+
+	<tags>
+		<tag>HAIR_HANDLES_IN_SEX</tag>
+	</tags>
+
+	<determiner><![CDATA[a head of]]></determiner>
+
+	<name><![CDATA[hair]]></name>
+
+	<namePlural pluralByDefault="false"><![CDATA[hairs]]></namePlural> 
+
+	<descriptorsMasculine/>
+	<descriptorsFeminine/>
+
+	<transformationDescription><![CDATA[
+		The transformation only lasts a matter of moments, leaving [npc.herHim] with soft, artificial hair.
+		<br/>[npc.Name] now [npc.has] [npc.hairColour] [style.boldHyena(synthetic hair)].
+	]]></transformationDescription>
+
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)] hair
+	]]></bodyDescription>
+</hair>

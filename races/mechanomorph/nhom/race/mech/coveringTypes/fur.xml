@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<coveringType>
+	<category>MAIN_SKIN</category>
+
+	<determiner><![CDATA[a layer of]]></determiner>
+
+	<name><![CDATA[nanoskin]]></name>
+
+	<namePlural pluralByDefault="false"><![CDATA[nanoskin]]></namePlural>
+
+	<naturalCoveringModifiers>
+		<modifier>METALLIC</modifier>
+	</naturalCoveringModifiers>
+
+	<extraCoveringModifiers>
+		<modifier>MATTE</modifier>
+		<modifier>GLOSSY</modifier>
+	</extraCoveringModifiers>
+
+	<naturalPatterns>
+		<pattern weighting="1">NONE</pattern>
+	</naturalPatterns>
+
+	<extraPatterns/>
+
+	<naturalColoursPrimary values="ALL_METAL"/>
+	<extraColoursPrimary values="ALL_WITH_METALS"/>
+
+	<naturalColoursSecondary values="ALL_METAL"/>
+	<extraColoursSecondary values="ALL_WITH_METALS"/>
+</coveringType>

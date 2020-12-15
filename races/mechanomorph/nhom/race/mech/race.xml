@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<race>
+	<!-- Core definitions: -->
+	<racialBody>nhom_mech</racialBody>
+
+	<applyRaceChanges/>
+
+	<name><![CDATA[mechanomorph]]></name>
+	<namePlural><![CDATA[mechanomorphs]]></namePlural>
+
+	<nameFeral>
+		<name legConfiguration="BIPEDAL"><![CDATA[automaton]]></name>
+	</nameFeral>
+	<nameFeralPlural>
+		<name legConfiguration="BIPEDAL"><![CDATA[automatons]]></name>
+	</nameFeralPlural>
+
+	<defaultTransformName><![CDATA[mechanical]]></defaultTransformName>
+
+	<colour>COVERING_SILVER</colour>
+
+	<disposition>NEUTRAL</disposition>
+
+	<racialClass>OTHER</racialClass>
+
+	<feralPartsAvailable>false</feralPartsAvailable>
+
+	<ableToSelfTransform>false</ableToSelfTransform>
+
+	<flyingRace>false</flyingRace>
+
+	<!-- Combat: -->
+	<combatBehaviour>BALANCED</combatBehaviour>
+
+	<!-- Breeding: -->
+	<chanceForMaleOffspring>0.5</chanceForMaleOffspring>
+
+	<numberOfOffspringLow>2</numberOfOffspringLow>
+	<numberOfOffspringHigh>3</numberOfOffspringHigh>
+
+	<!-- Gameplay preferences: -->
+	<defaultFemininePreference>NORMAL</defaultFemininePreference>
+	<defaultMasculinePreference>NORMAL</defaultMasculinePreference>
+
+	<affectedByFurryPreference>true</affectedByFurryPreference>
+</race>

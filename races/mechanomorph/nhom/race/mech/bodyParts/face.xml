@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<face>
+	<race>nhom_mech</race>
+
+	<transformationName><![CDATA[synthetic]]></transformationName>
+
+	<coveringType>nhom_mech_fur</coveringType>
+
+	<mouthType>nhom_mech_mouth</mouthType>
+
+	<tags>
+		<tag>FACE_MUZZLE</tag>
+		<tag>FACE_FANGS</tag>
+		<tag>FACE_NATURAL_BALDNESS_SKIN</tag>
+	</tags>
+
+	<names/>
+	<namesPlural/> 
+
+	<descriptorsMasculine/>
+	<descriptorsFeminine/>
+
+	<noseName><![CDATA[nose]]></noseName>
+	<noseNamePlural><![CDATA[noses]]></noseNamePlural>
+
+	<noseDescriptorsMasculine/>
+	<noseDescriptorsFeminine/>
+
+	<transformationDescription><![CDATA[
+		#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)
+			 A layer of [npc.faceSkin+] quickly covers [npc.her] new face.
+		#ELSE
+			 Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+].
+		#ENDIF
+		<br/>[npc.Name] now [npc.has] a [style.boldHyena(synthetic face)], [npc.materialDescriptor] [npc.faceFullDescription].
+	]]></transformationDescription>
+
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] [npc.a_feminineDescriptor(true)], synthetic face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)].
+	]]></bodyDescription>
+</face>

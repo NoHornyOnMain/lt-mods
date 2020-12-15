@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<anus>
+	<race>nhom_mech</race>
+
+	<coveringType>ANUS</coveringType>
+
+	<names/>
+
+	<namesPlural/>
+
+	<descriptorsMasculine>
+		<descriptor><![CDATA[synthetic]]></descriptor>
+	</descriptorsMasculine>
+
+	<descriptorsFeminine>
+		<descriptor><![CDATA[synthetic]]></descriptor>
+	</descriptorsFeminine>
+
+	<defaultOrificeModifiers>
+		<modifier>MUSCLE_CONTROL</modifier>
+	</defaultOrificeModifiers>
+</anus>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		<value>500</value> 
+		<determiner><![CDATA[a vial of]]></determiner>
+		<name><![CDATA[MiniMech Meds]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[MiniMech Meds]]></namePlural>
+		<description><![CDATA[A small vial, containing a liquid consisting of millions of microscopic nanomachines. Whilst not particularly paletable, these technological marvels can heal most injuries in an instant.]]></description> 
+
+		<useDescriptor>drink</useDescriptor>
+
+		<sexUse>true</sexUse>
+		<combatUseAllies>true</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>true</consumedOnUse>
+
+		<rarity>RARE</rarity> 
+
+		<imageName zLayer="0" imageRotation="0" imageSize="100">background_bottom.svg</imageName>
+		<imageName zLayer="1" imageRotation="0" imageSize="70" target1='stroke="#000"' replacement1='stroke="#ff5555"' target2='#ff8080' replacement2='#ff5555'>res/mods/nhom/race/mech/subspecies/icon.svg</imageName>
+		<imageName zLayer="2" imageRotation="0" imageSize="70">nanomachine_vial.svg</imageName>
+		<imageName zLayer="3" imageRotation="0" imageSize="100">background_top.svg</imageName>
+
+		<colourPrimary>COVERING_SILVER</colourPrimary>
+		<colourSecondary/>
+		<colourTertiary/>
+
+		<potionDescriptor><![CDATA[mech]]></potionDescriptor>
+		<associatedRace>nhom_mech</associatedRace>
+		<enchantmentItemTypeId>ELIXIR</enchantmentItemTypeId>
+		<enchantmentEffectId>RACE</enchantmentEffectId>
+
+		<effectTooltipLines>
+			<line><![CDATA[[style.boldGood(Restores)] 30% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+		</effectTooltipLines>
+
+		<applyEffects><![CDATA[
+			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/2)]
+			<p style='margin-bottom:0; padding-bottom:0;'>
+				[npc.Name] [npc.verb(feel)] [npc.her] injuries start to heal...
+			</p>
+		]]></applyEffects>
+
+		<itemTags>
+			<tag>RACIAL_TF_ITEM</tag>
+			<tag>SOLD_BY_RALPH</tag>
+		</itemTags>
+	</coreAttributes>
+
+	<useDescriptions>
+		<selfUse><![CDATA[
+		[npc.Name] [npc.verb(open)] the vial of nanomachines and [npc.verb(look)] at the shiny, metallic liquid inside. [npc.She] then [npc.verb(brace)] [npc.her]self and [npc.verb(swallow)] the contents in one, the liquid leaving a strong metallic taste in [npc.her] mouth.
+		]]></selfUse>
+		<otherUse><![CDATA[
+		[npc.Name] [npc.verb(open)] the vial of nanomachines and [npc.verb(hold)] it out to [npc2.name], allowing [npc2.herHim] to see the shiny, metallic liquid inside. Reluctantly, [npc2.she] then [npc2.verb(brace)] [npc2.her]self and [npc2.verb(swallow)] the contents in one, the liquid leaving a strong metallic taste in [npc2.her] mouth.
+		]]></otherUse>
+	</useDescriptions>
+</item>

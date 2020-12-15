@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ear>
+	<race>nhom_mech</race>
+
+	<transformationName><![CDATA[synthetic]]></transformationName>
+
+	<coveringType>nhom_mech_fur</coveringType>
+
+	<tags/>
+
+	<name><![CDATA[ear]]></name>
+	<namePlural><![CDATA[ears]]></namePlural>
+
+	<descriptorsMasculine>
+		<descriptor>metallic</descriptor>
+		<descriptor>robotic</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>metallic</descriptor>
+		<descriptor>robotic</descriptor>
+	</descriptorsFeminine>
+
+	<transformationDescription><![CDATA[
+		#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)
+		 A layer of [npc.earFullDescriptionColour] quickly grows to cover them,
+		#ELSE
+		 Just like the rest of [npc.her] body, they're made out of [npc.earFullDescription],
+		#ENDIF
+		 and as the transformation finishes, [npc.she] experimentally [npc.verb(feel)] the smooth surface of [npc.her] new robotic ears.
+		<br/>[npc.Name] now [npc.has] [style.boldHyena(robotic ears)], which are [npc.materialCompositionDescriptor] [npc.earFullDescription].
+	]]></transformationDescription>
+
+	<bodyDescription><![CDATA[
+		[npc.She] [npc.has] a pair of#IF(npc.isPiercedEar()) pierced,#ENDIF robotic ears, which are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
+	]]></bodyDescription>
+</ear>

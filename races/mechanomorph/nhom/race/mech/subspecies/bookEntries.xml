@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookText>
+	
+	<htmlContent tag="MECH_BASIC"><![CDATA[
+	<p>
+		Mechanomorphs can be found pretty much anywhere in Lilith's Realm due to the hardiness their mechanical parts provide them. Whilst they can vary wildly in appearance, it's typically quite easy to identify a mechanomorph up-close due to their unique metallic skin.
+	</p>
+	]]>
+	</htmlContent>
+
+	<htmlContent tag="MECH_ADVANCED"><![CDATA[
+	<p>
+		Mechanomorphs are quite unique in that their transformations are not entirely provoked by the arcane forces that cause other transformations. Instead, a special type of nanomachine is ingested that, when properly enchanted, can transform a biological entity into a purely mechanical version of itself.
+	</p>
+	<p>
+		These nanomachines are also what allow the otherwise impossible transformation from mechanical parts into living flesh. When provided with a properly enchanted transformation potion, the nanomachines can replicate what the potion would do if used on a biological part before disassembling themselves, leaving no trace the part was ever non-organic.
+	</p>
+	<p>
+		The mechanical parts of a mechanomorph, as well as the nanomachines that maintain them, are powered by arcane magic, similar to most modern technology. However, as this is drained from the mechanomorphs own aura, it renders them naturally weaker users of the arcane.
+	</p>
+	]]>
+	</htmlContent>
+	
+</bookText>

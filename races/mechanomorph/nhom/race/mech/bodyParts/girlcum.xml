@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fluid>	
+	<race>nhom_mech</race>
+
+	<transformationName><![CDATA[synthetic]]></transformationName>
+
+	<baseFluidType>GIRLCUM</baseFluidType>
+
+	<flavour>STRAWBERRY</flavour>
+
+	<namesMasculine>
+		<name><![CDATA[lubricant]]></name>
+	</namesMasculine>
+
+	<namesFeminine>
+		<name><![CDATA[lubricant]]></name>
+	</namesFeminine>
+
+	<descriptorsMasculine/>
+
+	<descriptorsFeminine/>
+
+	<defaultFluidModifiers>
+		<modifier>SLIMY</modifier>
+	</defaultFluidModifiers>
+</fluid>

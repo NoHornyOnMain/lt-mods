@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<arm>
+	<race>nhom_mech</race>
+
+	<transformationName><![CDATA[mechanical]]></transformationName>
+
+	<coveringType>nhom_mech_fur</coveringType>
+
+	<allowsFlight>false</allowsFlight>
+
+	<tags>
+		<tag>ARM_STANDARD</tag>
+	</tags>
+
+	<name><![CDATA[arm]]></name>
+	<namePlural><![CDATA[arms]]></namePlural> 
+
+	<descriptorsMasculine>
+		<descriptor>metallic</descriptor>
+		<descriptor>metal-plated</descriptor>
+	</descriptorsMasculine>
+
+	<descriptorsFeminine>
+		<descriptor>metallic</descriptor>
+		<descriptor>metal-plated</descriptor>
+	</descriptorsFeminine>
+
+	<handName><![CDATA[hand]]></handName>
+	<handNamePlural><![CDATA[hands]]></handNamePlural>
+	<handDescriptorsMasculine>
+		<descriptor>mechanical</descriptor>
+		<descriptor>metallic</descriptor>
+		<descriptor>robotic</descriptor>
+	</handDescriptorsMasculine>
+	<handDescriptorsFeminine>
+		<descriptor>mechanical</descriptor>
+		<descriptor>metallic</descriptor>
+		<descriptor>robotic</descriptor>
+	</handDescriptorsFeminine>
+
+	<fingerName><![CDATA[finger]]></fingerName>
+	<fingerNamePlural><![CDATA[fingers]]></fingerNamePlural>
+	<fingerDescriptorsMasculine>
+		<descriptor>metal</descriptor>
+		<descriptor>mechanical</descriptor>
+	</fingerDescriptorsMasculine>
+	<fingerDescriptorsFeminine>
+		<descriptor>metal</descriptor>
+		<descriptor>mechanical</descriptor>
+	</fingerDescriptorsFeminine>
+
+	<transformationDescription><![CDATA[
+		Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down, [npc.she] [npc.verb(see)] that [npc.her] arms are being converted into synthetic replacements. At [npc.her] upper-biceps, [npc.her] new synthetic arms connect smoothly to the [npc.skin] that's covering the rest of [npc.her] body.
+		<br/>As the transformation comes to an end, [npc.nameIsFull] left with tough, [style.boldHyena(mechanical arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].
+	]]></transformationDescription>
+
+	<bodyDescription><![CDATA[
+	[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] arms and hands are completely mechanical, with synthetic joints powered by arcane energy.
+	]]></bodyDescription>
+	
+</arm>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<leg>
+	<race>nhom_mech</race>
+
+	<transformationName><![CDATA[mechanical]]></transformationName>
+
+	<coveringType>nhom_mech_fur</coveringType>
+
+	<defaultFootStructure>PLANTIGRADE</defaultFootStructure>
+
+	<footType>HUMANOID</footType>
+
+	<spinneret>false</spinneret>
+
+	<tentacleType>NONE</tentacleType>
+
+	<tentacleCount>0</tentacleCount>
+
+	<allowedLegConfigurations>
+		<configuration>BIPEDAL</configuration>
+		<configuration>QUADRUPEDAL</configuration>
+	</allowedLegConfigurations>
+
+	<name><![CDATA[leg]]></name>
+	<namePlural><![CDATA[legs]]></namePlural> 
+
+	<descriptorsMasculine>
+		<descriptor>metallic</descriptor>
+		<descriptor>robotic</descriptor>
+		<descriptor>mechanical</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>metallic</descriptor>
+		<descriptor>robotic</descriptor>
+		<descriptor>mechanical</descriptor>
+	</descriptorsFeminine>
+
+	<footDescriptorsMasculine>
+		<descriptor>metallic</descriptor>
+		<descriptor>robotic</descriptor>
+		<descriptor>mechanical</descriptor>
+	</footDescriptorsMasculine>
+	<footDescriptorsFeminine>
+		<descriptor>metallic</descriptor>
+		<descriptor>robotic</descriptor>
+		<descriptor>mechanical</descriptor>
+	</footDescriptorsFeminine>
+
+	<toeDescriptorsMasculine>
+		<descriptor>metallic</descriptor>
+		<descriptor>robotic</descriptor>
+		<descriptor>mechanical</descriptor>
+	</toeDescriptorsMasculine>
+	<toeDescriptorsFeminine>
+		<descriptor>metallic</descriptor>
+		<descriptor>robotic</descriptor>
+		<descriptor>mechanical</descriptor>
+	</toeDescriptorsFeminine>
+
+	<transformationDescription><![CDATA[
+		[npc.Her] legs are quickly replaced with a smooth, metallic material as they change into a new form. As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new synthetic legs connect smoothly to the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.
+		<br/>[npc.Name] now [npc.has] tough, [style.boldHyena(mechanical legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].
+	]]></transformationDescription>
+
+	<bodyDescription><![CDATA[
+		[npc.Her] legs and feet are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)] and are completely mechanical, with synthetic joints powered by arcane energy.
+	]]></bodyDescription>
+	
+</leg>

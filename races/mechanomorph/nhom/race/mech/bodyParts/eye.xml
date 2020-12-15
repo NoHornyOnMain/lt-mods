@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eye>
+	<race>nhom_mech</race>
+
+	<transformationName><![CDATA[robotic]]></transformationName>
+
+	<coveringType>nhom_mech_eye</coveringType>
+
+	<defaultPairCount>1</defaultPairCount>
+
+	<defaultIrisShape>ROUND</defaultIrisShape>
+
+	<defaultPupilShape>ROUND</defaultPupilShape>
+
+	<tags>
+		<tag>NIGHT_VISION</tag>
+	</tags>
+
+	<name><![CDATA[eye]]></name>
+	<namePlural><![CDATA[eyes]]></namePlural>
+
+	<descriptorsMasculine>
+		<descriptor><![CDATA[robotic]]></descriptor>
+		<descriptor><![CDATA[artificial]]></descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor><![CDATA[robotic]]></descriptor>
+		<descriptor><![CDATA[artificial]]></descriptor>
+	</descriptorsFeminine>
+
+	<transformationDescription><![CDATA[
+		By the time [npc.she] hesitantly [npc.verb(open)] them again, they've changed into artificial, robotic eyes.
+		<br/>[npc.Name] now [npc.has] [style.boldHyena(robotic eyes)] with [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] and [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
+	]]></transformationDescription>
+
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull] [npc.eyePairs] robotic eyes, made from a strong, metallic substance. They have [npc.irisShape], [npc.irisColour(true)] irises, [npc.pupilShape], [npc.pupilColour(true)] pupils, and [npc.scleraColour(true)] sclerae.
+	]]></bodyDescription>
+</eye>

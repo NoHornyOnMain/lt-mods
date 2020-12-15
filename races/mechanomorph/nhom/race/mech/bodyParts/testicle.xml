@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testicle>
+	<race>nhom_mech</race>
+
+	<coveringType>nhom_mech_fur</coveringType>
+
+	<fluidType>nhom_mech_cum</fluidType>
+
+	<internal>false</internal>
+
+	<names/>
+	<namesPlural/>
+
+	<descriptors/>
+</testicle>
