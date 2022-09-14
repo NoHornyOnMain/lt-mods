@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<statusEffect>
+	<renderingPriority>70</renderingPriority>
+	<renderInEffectsPanel>false</renderInEffectsPanel>
+	<category>ATTRIBUTE</category>
+	<beneficial>NEUTRAL</beneficial>
+	<combatEffect>false</combatEffect>
+	<sexEffect>false</sexEffect>
+	<tags/>
+	<name><![CDATA[Enchantment Capacity Rebalance]]></name>
+	<description><![CDATA[
+		[npc.Name] [npc.is] being affected by the Enchantment Capacity Rebalance mod.
+	]]></description>
+	<imageName/>
+	<colourPrimary>BASE_WHITE</colourPrimary>
+	<colourSecondary/>
+	<colourTertiary/>
+	<attributeModifiers/>
+	<combatMoves/>
+	<spells/>
+	<extraEffects/>
+	<applicationCondition shortConditionalCheck="true"><![CDATA[true]]></applicationCondition>
+	<applicationLength constantRefresh="false">-1</applicationLength>
+	<applyEffect interval="0"><![CDATA[
+	#IF (npc.getBaseAttributeValue(ATTRIBUTE_ENCHANTMENT_LIMIT)!=npc.getAttributeValue(ATTRIBUTE_MAJOR_ARCANE))
+		[##npc.setAttribute( ATTRIBUTE_ENCHANTMENT_LIMIT, npc.getAttributeValue(ATTRIBUTE_MAJOR_ARCANE) )]
+	#ENDIF
+	]]></applyEffect>
+	<applyRemovalEffect/>
+	<applyPostRemovalEffect/>
+</statusEffect>
