@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAttributes>
+		<authorTag><![CDATA[The letters 'NHOM' have been precisely etched into the back of the fitness tracker.]]></authorTag>
+		<value>1000</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name appendColourName="true"><![CDATA[fitness tracker]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[fitness trackers]]></namePlural>
+		<description><![CDATA[A popular fitness tracker. Like your phone, you've figured out how to charge it using arcane energy.]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<equipSlots>
+			<slot>WRIST</slot>
+		</equipSlots>
+		<rarity>COMMON</rarity>
+		<clothingSet/>
+		<imageName>fitness_tracker.svg</imageName>
+		<stickers>
+			<category id="screen" priority="1">
+				<categoryName><![CDATA[Screen Content]]></categoryName>
+				<sticker id="blank" priority="1" defaultSticker="true" zLayer="1">
+					<stickerName><![CDATA[Blank Screen]]></stickerName>
+					<namePrefix/>
+					<descriptionModification/>
+					<imageName/>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+				<sticker id="digital_time_large" priority="2" defaultSticker="false" zLayer="1">
+					<stickerName><![CDATA[Digital Time]]></stickerName>
+					<namePrefix/>
+					<namePostfix/>
+					<descriptionModification/>
+					<imageName>digital_time_large.svg</imageName>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+				<sticker id="digital_time_steps" priority="3" defaultSticker="false" zLayer="1">
+					<stickerName><![CDATA[Digital Time (Steps)]]></stickerName>
+					<namePrefix/>
+					<namePostfix/>
+					<descriptionModification/>
+					<imageName>digital_time_steps.svg</imageName>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+				<sticker id="digital_time_heartrate" priority="4" defaultSticker="false" zLayer="1">
+					<stickerName><![CDATA[Digital Time (Heartrate)]]></stickerName>
+					<namePrefix/>
+					<namePostfix/>
+					<descriptionModification/>
+					<imageName>digital_time_heartrate.svg</imageName>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+				<sticker id="analogue_time" priority="5" defaultSticker="false" zLayer="1">
+					<stickerName><![CDATA[Analogue Time]]></stickerName>
+					<namePrefix/>
+					<namePostfix/>
+					<descriptionModification/>
+					<imageName>analogue_time.svg</imageName>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+			</category>
+		</stickers>
+		<enchantmentLimit/>
+		<effects/>
+		<blockedPartsList/>
+		<blockedPartsList/>
+		<incompatibleSlots/>
+		<primaryColours values="ALL"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours>
+			<colour>CLOTHING_BLACK_STEEL</colour>
+			<colour>CLOTHING_STEEL</colour>
+			<colour>CLOTHING_SILVER</colour>
+			<colour>CLOTHING_GOLD</colour>
+			<colour>CLOTHING_ROSE_GOLD</colour>
+		</secondaryColours>
+		<secondaryColoursDye values="ALL_METAL"/>
+		<tertiaryColours>
+			<colour>CLOTHING_BLACK_STEEL</colour>
+			<colour>CLOTHING_STEEL</colour>
+			<colour>CLOTHING_SILVER</colour>
+			<colour>CLOTHING_GOLD</colour>
+			<colour>CLOTHING_ROSE_GOLD</colour>
+		</tertiaryColours>
+		<tertiaryColoursDye values="ALL_METAL"/>
+		<defaultPatterns colourNameDerivedFromPattern="true"/>
+		<patternPrimaryColours values="ALL"/>
+		<patternSecondaryColours values="ALL"/>
+		<patternTertiaryColours values="ALL"/>
+		<customPatternColours/>
+		<itemTags>
+			<tag>NO_RANDOM_SPAWN</tag>
+			<tag>NOT_FOR_SALE</tag>
+		</itemTags>
+	</coreAttributes>
+	<sexAttributesSelf/>
+	<sexAttributesOther/>
+	<replacementText slot="WRIST" type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(place)] the fitness tracker onto [npc.her] wrist and [npc.verb(fasten)] the strap.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(place)] the fitness tracker onto [npc2.namePos] wrist and [npc.verb(fasten)] the strap.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] roughly [npc.verb(strap)] the fitness tracker onto [npc2.namePos] wrist.]]>
+		</otherRough>
+	</replacementText>
+	<displacementText slot="WRIST" type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] the strap of [npc.her] fitness tracker and [npc.verb(take)] it off.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] the strap of [npc2.namePos] fitness tracker and [npc.verb(take)] it off.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] roughly [npc.verb(unfasten)] the strap of [npc2.namePos] fitness tracker and [npc.verb(take)] it off.]]>
+		</otherRough>
+	</displacementText>
+</clothing>
