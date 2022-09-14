@@ -1,0 +1,11 @@
+
+<svg cursor="default" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+    <path d="M129.17 224.326c-1.177.04-29.224.956-31.284-4.493-.09-.234-2.798-13.741-3.718-27.312-.55-8.108-.43-10.504-.43-10.504h70.864s.098 2.72-.43 10.504c-.92 13.57-3.629 27.078-3.718 27.311-2.06 5.45-30.107 4.534-31.284 4.494zm0-192.653c-1.177-.04-29.224-.956-31.284 4.494-.09.234-2.798 13.74-3.718 27.311-.549 8.092-.43 10.505-.43 10.505h70.864s.097-2.736-.43-10.504c-.92-13.57-3.629-27.078-3.718-27.312-2.06-5.45-30.107-4.534-31.284-4.493z" fill="#ff8080" stroke="#000" style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"/>
+    <path style="fill:#ffe680;fill-opacity:1;stroke:#000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" d="M91.202 116.376h2.845v23.248h-2.845z"/>
+    <path style="fill:#ffb380;fill-opacity:1;stroke:#000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M93.738 73.983v108.034h70.864V73.983z"/>
+    <path style="fill:#232323;fill-opacity:1;stroke:#000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" d="M96.29 73.983v108.034h65.76V73.983z"/>
+    <path style="fill:#232323;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M106.096 89.551v76.898h46.148V89.551z"/>
+    <g id = "patternLayer">
+        <path style="fill:#ff8080;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" d="M129.17 223.928c-1.164.04-28.935.938-30.974-4.408-.089-.23-2.77-13.482-3.682-26.796-.544-7.956-.425-10.307-.425-10.307h70.164s.096 2.67-.426 10.307c-.91 13.314-3.593 26.566-3.681 26.795-2.04 5.347-29.81 4.448-30.975 4.409zm0-191.856c-1.164-.04-28.935-.938-30.975 4.41-.088.229-2.77 13.48-3.68 26.795-.544 7.939-.426 10.307-.426 10.307h70.164s.095-2.684-.426-10.306c-.91-13.315-3.593-26.567-3.68-26.797-2.04-5.347-29.811-4.448-30.976-4.408z"/>
+    </g>
+</svg>
