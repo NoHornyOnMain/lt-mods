@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAtributes>
+		<clothingAuthorTag><![CDATA[A small tag on the inside of the bag reads 'NHOM'.]]></clothingAuthorTag>
+		<value>250</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name><![CDATA[backpack]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[backpacks]]></namePlural>
+		<description><![CDATA[A decently large backpack. Good for carrying things more easily.]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<slot>TORSO_OVER</slot>
+		<rarity>COMMON</rarity>
+		<clothingSet/>
+		<imageName>backpack.svg</imageName>
+		<imageEquippedName/>
+		<enchantmentLimit/>
+		<effects/>
+		<blockedPartsList/>
+		<incompatibleSlots/>
+		<primaryColours values="ALL"/>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours values="ALL"/>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours values="SHADES_OF_GREY"/>
+		<tertiaryColoursDye values="ALL"/>
+		<itemTags>
+			<tag>SOLD_BY_NYAN</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+			<tag>SUBMISSION_TUNNEL_SPAWN</tag>
+			<tag>FITS_ARM_WINGS</tag>
+		</itemTags>
+	</coreAtributes>
+	<replacementText type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] backpack onto [npc.her] shoulders.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] pull [npc2.her] backpack onto [npc2.her] shoulders.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] [npc.verb(force)] the backpack onto [npc2.namePos] shoulders.]]>
+		</otherRough>
+	</replacementText>
+	<displacementText type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(pull)] the backpack off [npc.her] shoulders.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(pull)] the backpack off [npc2.namePos] shoulders.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] [npc.verb(rip)] the backpack off [npc2.namePos] shoulders.]]>
+		</otherRough>
+	</displacementText>
+</clothing>
