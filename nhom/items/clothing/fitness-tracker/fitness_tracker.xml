@@ -11,6 +11,9 @@
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
 			<slot>WRIST</slot>
+			<slot>PENIS</slot>
+			<slot>ANKLE</slot>
+			<slot>TAIL</slot>
 		</equipSlots>
 		<rarity>COMMON</rarity>
 		<clothingSet/>
@@ -22,7 +25,10 @@
 					<stickerName><![CDATA[Blank Screen]]></stickerName>
 					<namePrefix/>
 					<descriptionModification/>
-					<imageName/>
+					<imageName slot="WRIST"/>
+					<imageName slot="PENIS"/>
+					<imageName slot="ANKLE"/>
+					<imageName slot="TAIL"/>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
 					<unavailabilityText/>
@@ -33,7 +39,10 @@
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
-					<imageName>digital_time_large.svg</imageName>
+					<imageName slot="WRIST">digital_time_large.svg</imageName>
+					<imageName slot="PENIS">digital_time_large.svg</imageName>
+					<imageName slot="ANKLE">digital_time_large.svg</imageName>
+					<imageName slot="TAIL">digital_time_large.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
 					<unavailabilityText/>
@@ -44,7 +53,10 @@
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
-					<imageName>digital_time_steps.svg</imageName>
+					<imageName slot="WRIST">digital_time_steps.svg</imageName>
+					<imageName slot="PENIS">digital_time_steps.svg</imageName>
+					<imageName slot="ANKLE">digital_time_steps.svg</imageName>
+					<imageName slot="TAIL">digital_time_steps.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
 					<unavailabilityText/>
@@ -55,7 +67,10 @@
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
-					<imageName>digital_time_heartrate.svg</imageName>
+					<imageName slot="WRIST">digital_time_heartrate.svg</imageName>
+					<imageName slot="PENIS">digital_time_heartrate.svg</imageName>
+					<imageName slot="ANKLE">digital_time_heartrate.svg</imageName>
+					<imageName slot="TAIL">digital_time_heartrate.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
 					<unavailabilityText/>
@@ -66,7 +81,10 @@
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
-					<imageName>analogue_time.svg</imageName>
+					<imageName slot="WRIST">analogue_time.svg</imageName>
+					<imageName slot="PENIS">analogue_time.svg</imageName>
+					<imageName slot="ANKLE">analogue_time.svg</imageName>
+					<imageName slot="TAIL">analogue_time.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
 					<unavailabilityText/>
@@ -76,9 +94,14 @@
 		</stickers>
 		<enchantmentLimit/>
 		<effects/>
-		<blockedPartsList/>
-		<blockedPartsList/>
-		<incompatibleSlots/>
+		<blockedPartsList slot="WRIST"/>
+		<blockedPartsList slot="PENIS"/>
+		<blockedPartsList slot="ANKLE"/>
+		<blockedPartsList slot="TAIL"/>
+		<incompatibleSlots slot="WRIST"/>
+		<incompatibleSlots slot="PENIS"/>
+		<incompatibleSlots slot="ANKLE"/>
+		<incompatibleSlots slot="TAIL"/>
 		<primaryColours values="ALL"/>
 		<primaryColoursDye values="ALL"/>
 		<secondaryColours>
@@ -105,6 +128,7 @@
 		<itemTags>
 			<tag>NO_RANDOM_SPAWN</tag>
 			<tag>NOT_FOR_SALE</tag>
+			<tag>TRANSPARENT</tag>
 		</itemTags>
 	</coreAttributes>
 	<sexAttributesSelf/>
@@ -129,6 +153,72 @@
 		</other>
 		<otherRough>
 			<![CDATA[[npc.Name] roughly [npc.verb(unfasten)] the strap of [npc2.namePos] fitness tracker and [npc.verb(take)] it off.]]>
+		</otherRough>
+	</displacementText>
+	<replacementText slot="PENIS" type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(place)] the fitness tracker onto [npc.her] [npc.penis] and [npc.verb(fasten)] the strap.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(place)] the fitness tracker onto [npc2.namePos] [npc2.penis] and [npc.verb(fasten)] the strap.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] roughly [npc.verb(strap)] the fitness tracker onto [npc2.namePos] [npc2.penis].]]>
+		</otherRough>
+	</replacementText>
+	<displacementText slot="PENIS" type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] the strap of [npc.her] fitness tracker and [npc.verb(take)] it off [npc.her] [npc.penis].]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] the strap of [npc2.namePos] fitness tracker and [npc.verb(take)] it off [npc2.her] [npc2.penis].]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] roughly [npc.verb(unfasten)] the strap of [npc2.namePos] fitness tracker and [npc.verb(take)] it off [npc2.her] [npc2.penis].]]>
+		</otherRough>
+	</displacementText>
+	<replacementText slot="ANKLE" type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(place)] the fitness tracker onto [npc.her] ankle and [npc.verb(fasten)] the strap.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(place)] the fitness tracker onto [npc2.namePos] ankle and [npc.verb(fasten)] the strap.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] roughly [npc.verb(strap)] the fitness tracker onto [npc2.namePos] ankle.]]>
+		</otherRough>
+	</replacementText>
+	<displacementText slot="ANKLE" type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] the strap of [npc.her] fitness tracker and [npc.verb(take)] it off [npc.her] ankle.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] the strap of [npc2.namePos] fitness tracker and [npc.verb(take)] it off [npc2.her] ankle.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] roughly [npc.verb(unfasten)] the strap of [npc2.namePos] fitness tracker and [npc.verb(take)] it off [npc2.her] ankle.]]>
+		</otherRough>
+	</displacementText>
+	<replacementText slot="TAIL" type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(place)] the fitness tracker onto [npc.her] [npc.tail] and [npc.verb(fasten)] the strap.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(place)] the fitness tracker onto [npc2.namePos] [npc2.tail] and [npc.verb(fasten)] the strap.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] roughly [npc.verb(strap)] the fitness tracker onto [npc2.namePos] [npc2.tail].]]>
+		</otherRough>
+	</replacementText>
+	<displacementText slot="TAIL" type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] the strap of [npc.her] fitness tracker and [npc.verb(take)] it off [npc.her] [npc.tail].]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] the strap of [npc2.namePos] fitness tracker and [npc.verb(take)] it off [npc2.her] [npc2.tail].]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] roughly [npc.verb(unfasten)] the strap of [npc2.namePos] fitness tracker and [npc.verb(take)] it off [npc2.her] [npc2.tail].]]>
 		</otherRough>
 	</displacementText>
 </clothing>
