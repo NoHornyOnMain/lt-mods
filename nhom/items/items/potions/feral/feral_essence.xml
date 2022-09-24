@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		<authorTag><![CDATA[The letters 'NHOM' are written on the back of the vial's label.]]></authorTag>
+		<value>1000</value>
+		<determiner><![CDATA[a vial of]]></determiner>
+		<name><![CDATA[bestial essence]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[bestial essences]]></namePlural>
+		<description><![CDATA[A mysterious vial containing some kind of arcane essence.<br/><br/>Focusing on it seems to bring your more animalistic urges to the surface.]]></description>
+		<useDescriptor>drink</useDescriptor>
+		<sexUse>true</sexUse>
+		<combatUseAllies>true</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>true</consumedOnUse>
+		<rarity>EPIC</rarity>
+
+		<imageName zLayer="0">vial.svg</imageName>
+		<imageName zLayer="1" imageRotation="-12" imageSize="10">res/race/innoxia/wolf/subspecies/icon.svg</imageName>
+
+		<colourPrimary>BASE_BLACK</colourPrimary>
+		<colourSecondary>RACE_BESTIAL</colourSecondary>
+		<colourTertiary/>
+
+		<associatedRace/>
+		<enchantmentItemTypeId/>
+		<enchantmentEffectId/>
+
+		<effectTooltipLines>
+			<line><![CDATA[
+				[style.boldTFGeneric(Transforms)] beast-morphs into their [style.boldFeral(feral)] counterparts
+			]]></line>
+		</effectTooltipLines>
+
+		<applyEffects><![CDATA[
+			#IF(!npc.isUnique() || npc.isPlayer())
+				#IF(!npc.isFeral())
+					#IF(npc.getSubspecies().getRace().isFeralPartsAvailable())
+						[##npc.setFeral(npc.getSubspecies())]
+						<p style='margin-bottom:0; padding-bottom:0;'>
+						[npc.NamePos] form shifts and alters, becoming more animalistic as [npc.herHis] inner beast calls out to [npc.herHim].
+						<br/>
+						[npc.Name] [npc.has] become a [style.boldFeral(feral)] [npc.race].
+						</p>
+					#ELSE
+						<p style='margin-bottom:0; padding-bottom:0;'>
+						As [npc.name] is not a beast-morph, nothing happens.
+						</p>
+					#ENDIF
+				#ELSE
+					<p style='margin-bottom:0; padding-bottom:0;'>
+					As [npc.namePos] body is already [style.boldFeral(feral)], nothing happens.
+					</p>
+				#ENDIF
+			#ELSE
+				<p style='margin-bottom:0; padding-bottom:0;'>
+				Due to [npc.namePos] special circumstances, nothing happens.
+				</p>
+			#ENDIF
+		]]></applyEffects>
+
+		<itemTags>
+			<tag>RACIAL_TF_ITEM</tag>
+			<tag>DOMINION_ALLEYWAY_SPAWN</tag>
+			<tag>SUBMISSION_TUNNEL_SPAWN</tag>
+			<tag>CONTRABAND_LIGHT</tag>
+		</itemTags>
+
+	</coreAttributes>
+
+	<useDescriptions>
+		<selfUse><![CDATA[
+			[npc.Name] [npc.verb(pull)] the stopper out from the top of the mysterious vial, before tilting [npc.her] head back and bringing it up to [npc.her] waiting [npc.lips]. A distinct musky smell rises from the opening, and as [npc.she] [npc.verb(gulp)] down the strange liquid, [npc.sheIs] relieved to discover that it tastes much better than [npc.she] expected.
+		]]></selfUse>
+		<otherUse><![CDATA[
+			[npc.Name] [npc.verb(pull)] the stopper out from the top of the mysterious vial, before bringing it up to [npc2.namePos] waiting [npc2.lips]. A distinct musky smell rises from the opening, and as [npc2.she] [npc2.verb(gulp)] down the strange liquid, [npc2.sheIs] relieved to discover that it tastes much better than [npc2.she] expected.
+		]]></otherUse>
+	</useDescriptions>
+</item>
