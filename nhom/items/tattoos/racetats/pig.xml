@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value>
+		<name><![CDATA[pig head]]></name>
+		<description><![CDATA[A tattoo in the shape of a pig's head.]]></description>
+		<bodyOverviewDescription><![CDATA[a tattoo in the shape of a pig's head]]></bodyOverviewDescription>
+		<availabilityRequirements/>
+		<imageName>../../../../../race/innoxia/pig/subspecies/icon.svg</imageName>
+		<slotAvailability/>
+		<primaryColours values="ALL"/>
+		<secondaryColours/>
+		<tertiaryColours/>
+	</coreAttributes>
+</tattoo>

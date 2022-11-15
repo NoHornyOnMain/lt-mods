@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value>
+		<name><![CDATA[border collie head]]></name>
+		<description><![CDATA[A tattoo in the shape of a border collie's head.]]></description>
+		<bodyOverviewDescription><![CDATA[a tattoo in the shape of a border collie's head]]></bodyOverviewDescription>
+		<availabilityRequirements/>
+		<imageName>../../../../../race/neverLucky/dog/border_collie.svg</imageName>
+		<slotAvailability/>
+		<primaryColours values="JUST_BLACK"/>
+		<secondaryColours/>
+		<tertiaryColours/>
+	</coreAttributes>
+</tattoo>

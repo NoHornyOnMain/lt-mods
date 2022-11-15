@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value>
+		<name><![CDATA[samoyed head]]></name>
+		<description><![CDATA[A tattoo in the shape of a samoyed's head.]]></description>
+		<bodyOverviewDescription><![CDATA[a tattoo in the shape of a samoyed's head]]></bodyOverviewDescription>
+		<availabilityRequirements/>
+		<imageName>../../../../../race/dsg/dog/subspecies/samoyedicon.svg</imageName>
+		<slotAvailability/>
+		<primaryColours values="ALL"/>
+		<secondaryColours/>
+		<tertiaryColours/>
+	</coreAttributes>
+</tattoo>

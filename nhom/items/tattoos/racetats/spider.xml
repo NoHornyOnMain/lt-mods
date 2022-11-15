@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value>
+		<name><![CDATA[cobweb]]></name>
+		<description><![CDATA[A tattoo in the shape of a cobweb.]]></description>
+		<bodyOverviewDescription><![CDATA[a tattoo in the shape of a cobweb]]></bodyOverviewDescription>
+		<availabilityRequirements/>
+		<imageName>../../../../../race/charisma/spider/subspecies/icon.svg</imageName>
+		<slotAvailability/>
+		<primaryColours values="ALL"/>
+		<secondaryColours/>
+		<tertiaryColours/>
+	</coreAttributes>
+</tattoo>

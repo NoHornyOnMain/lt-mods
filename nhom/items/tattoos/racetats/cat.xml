@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value>
+		<name><![CDATA[feline paw]]></name>
+		<description><![CDATA[A tattoo in the shape of a feline pawprint.]]></description>
+		<bodyOverviewDescription><![CDATA[a tattoo in the shape of a feline pawprint]]></bodyOverviewDescription>
+		<availabilityRequirements/>
+		<imageName>../../../../../race/innoxia/cat/subspecies/icon.svg</imageName>
+		<slotAvailability/>
+		<primaryColours values="ALL"/>
+		<secondaryColours/>
+		<tertiaryColours/>
+	</coreAttributes>
+</tattoo>

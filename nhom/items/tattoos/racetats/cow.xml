@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value>
+		<name><![CDATA[cow horns]]></name>
+		<description><![CDATA[A tattoo in the shape of a pair of cow's horns.]]></description>
+		<bodyOverviewDescription><![CDATA[a tattoo in the shape of a pair of cow's horns]]></bodyOverviewDescription>
+		<availabilityRequirements/>
+		<imageName>../../../../../race/innoxia/cow/icon.svg</imageName>
+		<slotAvailability/>
+		<primaryColours values="ALL"/>
+		<secondaryColours/>
+		<tertiaryColours/>
+	</coreAttributes>
+</tattoo>

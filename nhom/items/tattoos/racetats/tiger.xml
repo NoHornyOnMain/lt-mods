@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value>
+		<name><![CDATA[tiger head]]></name>
+		<description><![CDATA[A tattoo in the shape of a tiger's head.]]></description>
+		<bodyOverviewDescription><![CDATA[a tattoo in the shape of a tiger's head]]></bodyOverviewDescription>
+		<availabilityRequirements/>
+		<imageName>../../../../../race/innoxia/panther/subspecies/icon_tiger.svg</imageName>
+		<slotAvailability/>
+		<primaryColours values="ALL"/>
+		<secondaryColours/>
+		<tertiaryColours/>
+	</coreAttributes>
+</tattoo>

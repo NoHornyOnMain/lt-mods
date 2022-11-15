@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value>
+		<name><![CDATA[mouse]]></name>
+		<description><![CDATA[A tattoo in the shape of a mouse.]]></description>
+		<bodyOverviewDescription><![CDATA[a tattoo in the shape of a mouse]]></bodyOverviewDescription>
+		<availabilityRequirements/>
+		<imageName>../../../../../race/innoxia/mouse/subspecies/icon.svg</imageName>
+		<slotAvailability/>
+		<primaryColours values="ALL"/>
+		<secondaryColours/>
+		<tertiaryColours/>
+	</coreAttributes>
+</tattoo>

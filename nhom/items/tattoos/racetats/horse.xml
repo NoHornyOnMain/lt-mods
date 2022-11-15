@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tattoo>
+	<coreAttributes>
+		<value>500</value>
+		<name><![CDATA[horse-shoe]]></name>
+		<description><![CDATA[A tattoo in the shape of a horse-shoe.]]></description>
+		<bodyOverviewDescription><![CDATA[a tattoo in the shape of a horse-shoe]]></bodyOverviewDescription>
+		<availabilityRequirements unique="true"><![CDATA[false]]></availabilityRequirements>
+		<imageName>../../../../../race/innoxia/horse/icon.svg</imageName>
+		<slotAvailability/>
+		<primaryColours values="ALL"/>
+		<secondaryColours/>
+		<tertiaryColours/>
+	</coreAttributes>
+</tattoo>
