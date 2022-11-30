@@ -6,7 +6,7 @@
 		<description><![CDATA[A tattoo in the shape of a dragon's head.]]></description>
 		<bodyOverviewDescription><![CDATA[a tattoo in the shape of a dragon's head]]></bodyOverviewDescription>
 		<availabilityRequirements/>
-		<imageName>../../../../../race/dsg/dragon/subspecies/dragonicon.svg</imageName>
+		<imageName>res/race/dsg/dragon/subspecies/dragonicon.svg</imageName>
 		<slotAvailability/>
 		<primaryColours values="ALL"/>
 		<secondaryColours values="ALL"/>

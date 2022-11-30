@@ -6,7 +6,7 @@
 		<description><![CDATA[A tattoo of a bear.]]></description>
 		<bodyOverviewDescription><![CDATA[a tattoo of a bear]]></bodyOverviewDescription>
 		<availabilityRequirements/>
-		<imageName>../../../../../race/dsg/bear/subspecies/bearicon.svg</imageName>
+		<imageName>res/race/dsg/bear/subspecies/bearicon.svg</imageName>
 		<slotAvailability/>
 		<primaryColours values="ALL"/>
 		<secondaryColours/>

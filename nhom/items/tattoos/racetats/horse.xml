@@ -6,7 +6,7 @@
 		<description><![CDATA[A tattoo in the shape of a horse-shoe.]]></description>
 		<bodyOverviewDescription><![CDATA[a tattoo in the shape of a horse-shoe]]></bodyOverviewDescription>
 		<availabilityRequirements unique="true"><![CDATA[false]]></availabilityRequirements>
-		<imageName>../../../../../race/innoxia/horse/icon.svg</imageName>
+		<imageName>res/race/innoxia/horse/icon.svg</imageName>
 		<slotAvailability/>
 		<primaryColours values="ALL"/>
 		<secondaryColours/>

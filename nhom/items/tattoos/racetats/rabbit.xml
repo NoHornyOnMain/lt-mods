@@ -6,7 +6,7 @@
 		<description><![CDATA[A tattoo in the shape of a rabbit's head.]]></description>
 		<bodyOverviewDescription><![CDATA[a tattoo in the shape of a rabbit's head]]></bodyOverviewDescription>
 		<availabilityRequirements/>
-		<imageName>../../../../../race/innoxia/rabbit/icon.svg</imageName>
+		<imageName>res/race/innoxia/rabbit/icon.svg</imageName>
 		<slotAvailability/>
 		<primaryColours values="ALL"/>
 		<secondaryColours/>

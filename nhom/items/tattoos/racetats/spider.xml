@@ -6,7 +6,7 @@
 		<description><![CDATA[A tattoo in the shape of a cobweb.]]></description>
 		<bodyOverviewDescription><![CDATA[a tattoo in the shape of a cobweb]]></bodyOverviewDescription>
 		<availabilityRequirements/>
-		<imageName>../../../../../race/charisma/spider/subspecies/icon.svg</imageName>
+		<imageName>res/race/charisma/spider/subspecies/icon.svg</imageName>
 		<slotAvailability/>
 		<primaryColours values="ALL"/>
 		<secondaryColours/>
