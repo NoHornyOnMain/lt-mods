@@ -2,7 +2,7 @@
 <tattoo>
 	<coreAttributes>
 		<value>500</value>
-		<name><![CDATA[feline paw]]></name>
+		<name><![CDATA[canine paw]]></name>
 		<description><![CDATA[A tattoo in the shape of a canine paw.]]></description>
 		<bodyOverviewDescription><![CDATA[a tattoo in the shape of a canine paw]]></bodyOverviewDescription>
 		<availabilityRequirements unique="true"><![CDATA[false]]></availabilityRequirements>
