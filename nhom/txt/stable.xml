@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dialogue>
+
+	<htmlContent author="NHOM" tag="lilaya_house"><![CDATA[
+	[#player.getCell().getDialogue(false).getContent()]
+
+	#IF (player.getAffectionMap().containsKey("nhom_stable_has_purchased"))
+		Your stable is nearby.
+	#ELSE
+		You notice a stable nearby with a 'For Sale' sign.
+	#ENDIF
+	]]>
+	</htmlContent>
+
+	<htmlContent author="NHOM" tag="investigate"><![CDATA[
+	Upon taking a closer look at the sign, you see that the stable can be purchased for [style.moneyFormat(250000, b)]
+	#IF (player.getMoney() < 250000)
+		, meaning you can't afford to buy it.
+	#ELSE
+		.
+	#ENDIF
+	]]>
+	</htmlContent>
+
+	<htmlContent author="NHOM" tag="corridor"><![CDATA[
+	You [pc.walk] in between the stalls of your stable.
+	]]>
+	</htmlContent>
+
+	<htmlContent author="NHOM" tag="entrance"><![CDATA[
+	You see one of the entrances to your stable.
+	]]>
+	</htmlContent>
+
+</dialogue>

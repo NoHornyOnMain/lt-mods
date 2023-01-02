@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dialogueNodes>
+
+    <scene id ="lilaya_house">
+        <author><![CDATA[NHOM]]></author>
+        <preParsingEffects/>
+        <content folderPath="mods/nhom/txt/stable">lilaya_house</content>
+        <secondsPassed><![CDATA[0]]></secondsPassed>
+        <continuesDialogue>false</continuesDialogue>
+        <travelDisabled>false</travelDisabled>
+        <inventoryDisabled>false</inventoryDisabled>
+        <regenerationDisabled>false</regenerationDisabled>
+        <responseTabs/>
+        <responses>
+            <response>
+                <!-- Pass through the regular 'Enter' response -->
+                <responseTabIndex><![CDATA[0]]></responseTabIndex>
+                <index><![CDATA[1]]></index>
+                <responseTitle><![CDATA[Enter [#player.getCell().getPlaceName()]]]></responseTitle>
+                <responseTooltip><![CDATA[[#player.getCell().getDialogue(false).getResponse(0,1).getTooltipText()]]]></responseTooltip> <!-- Get the usual tooltip for entering -->
+                <nextDialogue defaultPlaceType="LILAYA_HOME_ENTRANCE_HALL"/>
+                <!--<nextDialogue><![CDATA[[#player.getCell().getDialogue(false).getResponse(0,1).getNextDialogue().getId()]]]></nextDialogue>--> <!-- Internal dialogues don't have IDs... :( -->
+                <effects><![CDATA[[##player.getCell().getDialogue(false).getResponse(0,1).effects()]]]></effects> <!-- Apply the usual effects for entering -->
+            </response>
+            <response>
+                <!-- Investigate the Stable -->
+                <availabilityConditional><![CDATA[[#!player.getAffectionMap().containsKey("nhom_stable_has_purchased")]]]></availabilityConditional>
+                <responseTabIndex><![CDATA[0]]></responseTabIndex>
+                <index><![CDATA[2]]></index>
+                <responseTitle><![CDATA[Investigate Stable]]></responseTitle>
+                <responseTooltip><![CDATA[Investigate the stable.]]></responseTooltip>
+                <nextDialogue>nhom_stable_investigate</nextDialogue>
+                <effects/>
+            </response>
+            <response>
+                <!-- Enter the Stable -->
+                <availabilityConditional><![CDATA[[#player.getAffectionMap().containsKey("nhom_stable_has_purchased")]]]></availabilityConditional>
+                <responseTabIndex><![CDATA[0]]></responseTabIndex>
+                <index><![CDATA[2]]></index>
+                <responseTitle><![CDATA[Enter Stable]]></responseTitle>
+                <responseTooltip><![CDATA[Enter your stable.]]></responseTooltip>
+                <nextDialogue defaultPlaceType="nhom_stable_entrance"/>
+                <effects><![CDATA[
+                    [#player.setLocation(WORLD_TYPE_nhom_stable, PLACE_TYPE_nhom_stable_entrance, false)]
+                ]]></effects>
+            </response>
+        </responses>
+    </scene>
+
+    <scene id ="investigate">
+        <author><![CDATA[NHOM]]></author>
+        <preParsingEffects/>
+        <content folderPath="mods/nhom/txt/stable">investigate</content>
+        <secondsPassed><![CDATA[30]]></secondsPassed>
+        <continuesDialogue>true</continuesDialogue>
+        <travelDisabled>false</travelDisabled>
+        <inventoryDisabled>false</inventoryDisabled>
+        <regenerationDisabled>false</regenerationDisabled>
+        <responseTabs/>
+        <responses>
+            <response>
+                <!-- Pass through the regular 'Enter' response -->
+                <responseTabIndex><![CDATA[0]]></responseTabIndex>
+                <index><![CDATA[1]]></index>
+                <responseTitle><![CDATA[Enter [#player.getCell().getPlaceName()]]]></responseTitle>
+                <responseTooltip><![CDATA[[#player.getCell().getDialogue(false).getResponse(0,1).getTooltipText()]]]></responseTooltip>
+                <nextDialogue defaultPlaceType="LILAYA_HOME_ENTRANCE_HALL"/>
+                <effects><![CDATA[[##player.getCell().getDialogue(false).getResponse(0,1).effects()]]]></effects>
+            </response>
+            <response>
+                <!-- Purchase the Stable -->
+                <availabilityConditional><![CDATA[[#!(player.getMoney() < 250000)]]]></availabilityConditional>
+                <responseTabIndex><![CDATA[0]]></responseTabIndex>
+                <index><![CDATA[2]]></index>
+                <responseTitle><![CDATA[Purchase Stable]]></responseTitle>
+                <responseTooltip><![CDATA[Purchase the stable.]]></responseTooltip>
+                <nextDialogue>nhom_stable_lilaya_house</nextDialogue>
+                <effects><![CDATA[
+                    [##player.incrementMoney(-250000)]
+                    [##player.setAffection("nhom_stable_has_purchased", 1)]
+                ]]></effects>
+            </response>
+        </responses>
+    </scene>
+
+    <scene id ="entrance">
+        <author><![CDATA[NHOM]]></author>
+        <title><![CDATA[Entrance]]></title>
+        <tooltip><![CDATA[One of the entrances to your stable.]]></tooltip>
+        <preParsingEffects/>
+        <content folderPath="mods/nhom/txt/stable">entrance</content>
+        <secondsPassed ><![CDATA[20]]></secondsPassed>
+        <continuesDialogue>false</continuesDialogue>
+        <travelDisabled>false</travelDisabled>
+        <responses>
+            <response>
+                <responseTabIndex><![CDATA[0]]></responseTabIndex>
+                <index><![CDATA[1]]></index>
+                <responseTitle><![CDATA[Leave]]></responseTitle>
+                <responseTooltip><![CDATA[Walk outside, back to the streets of Dominion.]]></responseTooltip>
+                <nextDialogue>nhom_stable_lilaya_house</nextDialogue>
+                <secondsPassed ><![CDATA[20]]></secondsPassed>
+                <effects><![CDATA[
+                    [#pc.setLocation(WORLD_TYPE_DOMINION, PLACE_TYPE_DOMINION_AUNTS_HOME, false)]
+                ]]></effects>
+            </response>
+        </responses>
+    </scene>
+
+    <scene id ="corridor">
+        <author><![CDATA[NHOM]]></author>
+        <title><![CDATA[Corridor]]></title>
+        <tooltip><![CDATA[Corridor]]></tooltip>
+        <content folderPath="mods/nhom/txt/stable">corridor</content>
+        <secondsPassed ><![CDATA[20]]></secondsPassed>
+        <continuesDialogue>false</continuesDialogue>
+        <travelDisabled>false</travelDisabled>
+    </scene>
+
+</dialogueNodes>

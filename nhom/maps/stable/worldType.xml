@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<worldType>
+	<worldRegion>DOMINION</worldRegion>
+	<name><![CDATA[[player.namePos] Stable]]></name>
+	<colour>RACE_HORSE_MORPH</colour>
+	<sexBlockedReason/>
+	<furniturePresent>true</furniturePresent>
+	<wallsPresent>true</wallsPresent>
+	<loiteringEnabled>true</loiteringEnabled>
+	<flightEnabled>false</flightEnabled>
+	<visibleFromStart>false</visibleFromStart>
+	<fullyRevealedFromStart>false</fullyRevealedFromStart>
+	<globalMapLocation>WORLD_MAP_DOMINION</globalMapLocation>
+	<standardPlace>nhom_stable_corridor</standardPlace>
+	<entryFromGlobalMapLocation>nhom_stable_entrance</entryFromGlobalMapLocation>
+	<teleportPermissions>BOTH</teleportPermissions>
+	<places>
+		<!-- Example Room Types
+		Dungeon Cell = LILAYA_HOME_DUNGEON_CELL
+		Generic Slave Room = LILAYA_HOME_ROOM_WINDOW_GROUND_FLOOR
+		-->
+		<place colour="#000000">GENERIC_IMPASSABLE</place>
+		<place colour="#cccccc">nhom_stable_corridor</place> <!-- Corridor -->
+		<place colour="#00ee00">nhom_stable_entrance</place> <!-- Main Entrance -->
+		<place colour="#00eeb0">nhom_stable_side_entrance</place> <!-- Side Entrances -->
+		<place colour="#dd0000">LILAYA_HOME_DUNGEON_CELL</place> <!-- Main 'Stalls' -->
+		<place colour="#0000ff">LILAYA_HOME_ROOM_WINDOW_GROUND_FLOOR</place> <!-- Central Rooms -->
+	</places>
+</worldType>

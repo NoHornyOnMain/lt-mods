@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<encounterRoot>
+
+    <additionalPlaceTypeTriggers>
+        <placeType>DOMINION_AUNTS_HOME</placeType>
+    </additionalPlaceTypeTriggers>
+    <possibleEncounters>
+        <encounter>
+            <name><![CDATA[nhom_stable_lilaya_house_override]]></name>
+            <chanceToTrigger opportunisticEncounter="false"><![CDATA[100]]></chanceToTrigger>
+            <dialogueReturned><![CDATA[nhom_stable_lilaya_house]]></dialogueReturned>
+        </encounter>
+    </possibleEncounters>
+</encounterRoot>
