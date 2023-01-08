@@ -7,7 +7,13 @@
     <possibleEncounters>
         <encounter>
             <name><![CDATA[nhom_stable_lilaya_house_override]]></name>
-            <chanceToTrigger opportunisticEncounter="false"><![CDATA[100]]></chanceToTrigger>
+            <chanceToTrigger opportunisticEncounter="false"><![CDATA[
+                #IF (player.getCell().getDialogue(false).getResponse(0,1).getNextDialogue() == PLACE_TYPE_LILAYA_HOME_ENTRANCE_HALL.getDialogue(false))
+                    100
+                #ELSE
+                    0
+                #ENDIF
+            ]]></chanceToTrigger>
             <dialogueReturned><![CDATA[nhom_stable_lilaya_house]]></dialogueReturned>
         </encounter>
     </possibleEncounters>
