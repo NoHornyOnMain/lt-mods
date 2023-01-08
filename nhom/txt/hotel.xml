@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dialogue>
+
+	<!-- Outside -->
+	<htmlContent author="NHOM" tag="dominion_demon_home_arthur"><![CDATA[
+		[#player.getCell().getDialogue(false).getContent()]
+
+		<b style='color:[#COLOUR_BASE_BLUE.toWebHexString()];'>Sapphire Fox Hotel & Spa:</b><br/>
+
+		#IF (player.getAffectionMap().containsKey("nhom_hotel_has_purchased"))
+			The Sapphire Fox Hotel & Spa is nearby.
+		#ELSE
+			You notice a sign in the window of a nearby hotel.
+		#ENDIF
+	]]></htmlContent>
+
+	<!-- Purchasing -->
+	<htmlContent author="NHOM" tag="investigate_purchase_sign"><![CDATA[
+		On closer inspection, you can see that the sign reads as follows:<br>
+		<div style="width: 300px; border:3px solid [#COLOUR_BASE_GOLD.toWebHexString()]; background-color: [#COLOUR_TEXT.toWebHexString()]; color: [#COLOUR_BASE_PITCH_BLACK.toWebHexString()]; text-align: center;">
+			<b>Sapphire Fox Hotel & Spa</b><br>
+			Premium suites available for purchase.<br>
+			An excellent investment opportunity.<br>
+			Interested persons inquire within.<br>
+		</div>
+	]]></htmlContent>
+
+	<htmlContent author="NHOM" tag="inquire_about_purchase_sign"><![CDATA[
+		After speaking with the receptionist, you establish that purchasing one of the Sapphire Fox's suites would cost you [style.moneyFormat(3,750,000, b)].<br>
+		#IF (player.getMoney() < 3750000)
+			Unfortunately, this means that you cannot afford the purchase and will have to come back when you're a little richer.
+		#ELSE
+			As such, you can afford to make the purchase if you wish to do so.
+		#ENDIF
+	]]></htmlContent>
+
+	<!-- Ground Floor -->
+	<htmlContent author="NHOM" tag="ground_floor_entrance"><![CDATA[
+		Standing at the entrance of the Sapphire Fox's lobby, you can see the reception desk and an entryway leading to the building's spa facility.<br>
+		At one side of the room, you can also see a set of elevators that can take you between the many floors of the building.
+		#IF (!player.getAffectionMap().containsKey("nhom_hotel_has_purchased"))
+			<br><br>The receptionist is at their desk, so now would likely be a good time to inquire about purchasing a suite.
+		#ENDIF
+	]]></htmlContent>
+
+	<htmlContent author="NHOM" tag="ground_floor_lobby"><![CDATA[
+		Standing in the Sapphire Fox's lobby, you can see the reception desk and an entryway leading to the building's spa facility.<br>
+		At one side of the room, you can also see a set of elevators that can take you between the many floors of the building.
+		#IF (!player.getAffectionMap().containsKey("nhom_hotel_has_purchased"))
+			<br><br>The receptionist is at their desk, so now would likely be a good time to inquire about purchasing a suite.
+		#ENDIF
+	]]></htmlContent>
+
+	<htmlContent author="NHOM" tag="ground_floor_reception"><![CDATA[
+		Standing by the Sapphire Fox's reception desk, you can see an entryway leading to the building's spa facility.<br>
+		At one side of the room, you can also see a set of elevators that can take you between the many floors of the building.
+		#IF (!player.getAffectionMap().containsKey("nhom_hotel_has_purchased"))
+			<br><br>The receptionist is at their desk, so now would likely be a good time to inquire about purchasing a suite.
+		#ENDIF
+	]]></htmlContent>
+
+	<htmlContent author="NHOM" tag="ground_floor_elevators"><![CDATA[
+		As you make your way towards the elevators, one of them opens. You could use it to reach a different floor.
+		#IF (!player.getAffectionMap().containsKey("nhom_hotel_has_purchased"))
+			<br><br>You don't have much reason to do so, however, considering that nobody you know is staying here.
+		#ENDIF
+	]]></htmlContent>
+
+	<!-- Player Room -->
+	<htmlContent author="NHOM" tag="room_player_entrance"><![CDATA[
+		Standing near the entrance of your suite, you can see the full contents of the main room.<br>
+		This consists of a kitchen, dining area and living area, each equipped with high quality furnishings.
+	]]></htmlContent>
+
+</dialogue>

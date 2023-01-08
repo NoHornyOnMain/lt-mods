@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<encounterRoot>
+	<additionalPlaceTypeTriggers>
+		<placeType>DOMINION_DEMON_HOME_ARTHUR</placeType>
+	</additionalPlaceTypeTriggers>
+	<possibleEncounters>
+		<encounter>
+			<name><![CDATA[nhom_hotel_dominion_demon_home_arthur_override]]></name>
+			<chanceToTrigger opportunisticEncounter="false"><![CDATA[
+				#IF (player.isQuestProgressGreaterThan(QUEST_LINE_MAIN, QUEST_MAIN_1_B_DEMON_HOME))
+					1000
+				#ELSE
+					0
+				#ENDIF
+			]]></chanceToTrigger>
+			<dialogueReturned><![CDATA[nhom_hotel_dominion_demon_home_arthur]]></dialogueReturned>
+		</encounter>
+	</possibleEncounters>
+</encounterRoot>

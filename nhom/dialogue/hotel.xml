@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dialogueNodes>
+
+	<!-- Outside -->
+	<scene id ="dominion_demon_home_arthur">
+		<author><![CDATA[NHOM]]></author>
+		<preParsingEffects/>
+		<content folderPath="mods/nhom/txt/hotel">dominion_demon_home_arthur</content>
+		<secondsPassed><![CDATA[0]]></secondsPassed>
+		<continuesDialogue>false</continuesDialogue>
+		<travelDisabled>false</travelDisabled>
+		<inventoryDisabled>false</inventoryDisabled>
+		<regenerationDisabled>false</regenerationDisabled>
+		<responseTabs/>
+		<responses>
+			<response>
+				<!-- Allow access to Sawlty Towers -->
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[Approach Sawlty Towers]]></responseTitle>
+				<responseTooltip><![CDATA[[player.Walk] over to Sawlty Towers.]]></responseTooltip>
+				<nextDialogue defaultPlaceType="DOMINION_DEMON_HOME_ARTHUR"/>
+				<effects/>
+			</response>
+			<response>
+				<!-- Investigate the Sign -->
+				<availabilityConditional><![CDATA[[#!player.getAffectionMap().containsKey("nhom_hotel_has_purchased")]]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[2]]></index>
+				<responseTitle><![CDATA[Investigate Sign]]></responseTitle>
+				<responseTooltip><![CDATA[Investigate the sign in the hotel's window.]]></responseTooltip>
+				<nextDialogue>nhom_hotel_investigate_purchase_sign</nextDialogue>
+				<effects/>
+			</response>
+			<response>
+				<!-- Enter the Hotel Building -->
+				<availabilityConditional><![CDATA[[#player.getAffectionMap().containsKey("nhom_hotel_has_purchased")]]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[2]]></index>
+				<responseTitle><![CDATA[Enter Sapphire Fox]]></responseTitle>
+				<responseTooltip><![CDATA[Walk into the main lobby of the Sapphire Fox hotel.]]></responseTooltip>
+				<nextDialogue>nhom_hotel_ground_floor_entrance</nextDialogue>
+				<effects><![CDATA[
+					[#player.setLocation(WORLD_TYPE_nhom_hotel_ground_floor, PLACE_TYPE_nhom_hotel_ground_floor_entrance, false)]
+				]]></effects>
+			</response>
+		</responses>
+	</scene>
+
+	<!-- Purchasing -->
+	<scene id ="investigate_purchase_sign">
+		<author><![CDATA[NHOM]]></author>
+		<preParsingEffects/>
+		<content folderPath="mods/nhom/txt/hotel">investigate_purchase_sign</content>
+		<secondsPassed><![CDATA[0]]></secondsPassed>
+		<continuesDialogue>true</continuesDialogue>
+		<travelDisabled>false</travelDisabled>
+		<inventoryDisabled>false</inventoryDisabled>
+		<regenerationDisabled>false</regenerationDisabled>
+		<responseTabs/>
+		<responses>
+			<response>
+				<!-- Return to Previous Scene -->
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[Demon Home]]></responseTitle>
+				<responseTooltip><![CDATA[Ignore the sign and return to the streets of Demon Home.]]></responseTooltip>
+				<nextDialogue>nhom_hotel_dominion_demon_home_arthur</nextDialogue>
+				<effects/>
+			</response>
+			<response>
+				<!-- Inquire Within -->
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[2]]></index>
+				<responseTitle><![CDATA[Inquire Within]]></responseTitle>
+				<responseTooltip><![CDATA[Do as the sign says and enter the Sapphire Fox to ask about purchasing a suite.]]></responseTooltip>
+				<nextDialogue>nhom_hotel_ground_floor_entrance</nextDialogue>
+				<effects><![CDATA[
+					[#player.setLocation(WORLD_TYPE_nhom_hotel_ground_floor, PLACE_TYPE_nhom_hotel_ground_floor_entrance, false)]
+				]]></effects>
+			</response>
+		</responses>
+	</scene>
+
+	<scene id ="inquire_about_purchase_sign">
+		<author><![CDATA[NHOM]]></author>
+		<preParsingEffects/>
+		<content folderPath="mods/nhom/txt/hotel">inquire_about_purchase_sign</content>
+		<secondsPassed><![CDATA[0]]></secondsPassed>
+		<continuesDialogue>true</continuesDialogue>
+		<travelDisabled>false</travelDisabled>
+		<inventoryDisabled>false</inventoryDisabled>
+		<regenerationDisabled>false</regenerationDisabled>
+		<responseTabs/>
+		<responses>
+			<response>
+				<!-- Purchase the Suite -->
+				<availabilityConditional><![CDATA[[#!(player.getMoney() < 3750000)]]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[Purchase Suite]]></responseTitle>
+				<responseTooltip><![CDATA[Purchase the suite.]]></responseTooltip>
+				<nextDialogue>nhom_hotel_ground_floor_reception</nextDialogue>
+				<effects><![CDATA[
+					[##player.incrementMoney(-3750000)]
+					[##player.setAffection("nhom_hotel_has_purchased", 1)]
+				]]></effects>
+			</response>
+		</responses>
+	</scene>
+
+	<!-- Ground Floor -->
+	<scene id ="ground_floor_entrance">
+		<author><![CDATA[NHOM]]></author>
+		<title><![CDATA[Sapphire Fox Entrance]]></title>
+		<tooltip><![CDATA[The entrance to the Sapphire Fox's main lobby.]]></tooltip>
+		<preParsingEffects/>
+		<content folderPath="mods/nhom/txt/hotel">ground_floor_entrance</content>
+		<secondsPassed ><![CDATA[0]]></secondsPassed>
+		<continuesDialogue>false</continuesDialogue>
+		<travelDisabled>false</travelDisabled>
+		<responses>
+			<response>
+				<!-- Leave -->
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTooltip><![CDATA[Walk outside, back to the streets of Demon Home.]]></responseTooltip>
+				<nextDialogue>nhom_hotel_dominion_demon_home_arthur</nextDialogue>
+				<secondsPassed><![CDATA[10]]></secondsPassed>
+				<effects><![CDATA[
+					[#pc.setLocation(WORLD_TYPE_DOMINION, PLACE_TYPE_DOMINION_DEMON_HOME_ARTHUR, false)]
+				]]></effects>
+			</response>
+		</responses>
+	</scene>
+
+	<scene id ="ground_floor_lobby">
+		<author><![CDATA[NHOM]]></author>
+		<title><![CDATA[Sapphire Fox Lobby]]></title>
+		<tooltip><![CDATA[The main lobby area of Sapphire Fox.]]></tooltip>
+		<preParsingEffects/>
+		<content folderPath="mods/nhom/txt/hotel">ground_floor_lobby</content>
+		<secondsPassed ><![CDATA[0]]></secondsPassed>
+		<continuesDialogue>false</continuesDialogue>
+		<travelDisabled>false</travelDisabled>
+		<responses/>
+	</scene>
+
+	<scene id ="ground_floor_reception">
+		<author><![CDATA[NHOM]]></author>
+		<title><![CDATA[Sapphire Fox Reception Desk]]></title>
+		<tooltip><![CDATA[The main lobby area of Sapphire Fox.]]></tooltip>
+		<preParsingEffects/>
+		<content folderPath="mods/nhom/txt/hotel">ground_floor_reception</content>
+		<secondsPassed ><![CDATA[0]]></secondsPassed>
+		<continuesDialogue>false</continuesDialogue>
+		<travelDisabled>false</travelDisabled>
+		<responses>
+			<response>
+				<availabilityConditional><![CDATA[[#!player.getAffectionMap().containsKey("nhom_hotel_has_purchased")]]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[Inquire About Purchase]]></responseTitle>
+				<responseTooltip><![CDATA[As the sign outside suggested, ask the receptionist about purchasing one of the hotel's suites.]]></responseTooltip>
+				<nextDialogue>nhom_hotel_inquire_about_purchase_sign</nextDialogue>
+				<effects/>
+			</response>
+		</responses>
+	</scene>
+
+	<scene id ="ground_floor_elevators">
+		<author><![CDATA[NHOM]]></author>
+		<title><![CDATA[Sapphire Fox Elevators]]></title>
+		<tooltip><![CDATA[A wall of elevators.]]></tooltip>
+		<preParsingEffects/>
+		<content folderPath="mods/nhom/txt/hotel">ground_floor_elevators</content>
+		<secondsPassed ><![CDATA[0]]></secondsPassed>
+		<continuesDialogue>false</continuesDialogue>
+		<travelDisabled>false</travelDisabled>
+		<responses>
+			<response>
+				<!-- Go to Player's Suite -->
+				<availabilityConditional><![CDATA[[#player.getAffectionMap().containsKey("nhom_hotel_has_purchased")]]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[Enter Suite]]></responseTitle>
+				<responseTooltip><![CDATA[Enter your suite.]]></responseTooltip>
+				<nextDialogue>nhom_hotel_room_player_entrance</nextDialogue>
+				<effects><![CDATA[
+					[#player.setLocation(WORLD_TYPE_nhom_hotel_room_player, PLACE_TYPE_nhom_hotel_room_player_entrance, false)]
+				]]></effects>
+			</response>
+		</responses>
+	</scene>
+
+	<!-- Player Room -->
+	<scene id ="room_player_entrance">
+		<author><![CDATA[NHOM]]></author>
+		<title><![CDATA[Main Room]]></title>
+		<tooltip><![CDATA[The main room of your hotel.]]></tooltip>
+		<preParsingEffects/>
+		<content folderPath="mods/nhom/txt/hotel">room_player_entrance</content>
+		<secondsPassed ><![CDATA[0]]></secondsPassed>
+		<continuesDialogue>false</continuesDialogue>
+		<travelDisabled>false</travelDisabled>
+		<responses>
+			<response>
+				<!-- Leave -->
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[Go to Lobby]]></responseTitle>
+				<responseTooltip><![CDATA[Take one of the elevators back down to the main lobby.]]></responseTooltip>
+				<nextDialogue>nhom_hotel_ground_floor_elevators</nextDialogue>
+				<secondsPassed><![CDATA[60]]></secondsPassed>
+				<effects><![CDATA[
+					[#player.setLocation(WORLD_TYPE_nhom_hotel_ground_floor, PLACE_TYPE_nhom_hotel_ground_floor_elevators, false)]
+				]]></effects>
+			</response>
+		</responses>
+	</scene>
+
+</dialogueNodes>

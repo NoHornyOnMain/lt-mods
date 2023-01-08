@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<worldType>
+	<worldRegion>DOMINION</worldRegion>
+	<name><![CDATA[Sapphire Fox<br>Ground Floor]]></name>
+	<colour>BASE_BLUE</colour>
+	<sexBlockedReason/>
+	<furniturePresent>true</furniturePresent>
+	<wallsPresent>true</wallsPresent>
+	<loiteringEnabled>true</loiteringEnabled>
+	<flightEnabled>false</flightEnabled>
+	<visibleFromStart>false</visibleFromStart>
+	<fullyRevealedFromStart>false</fullyRevealedFromStart>
+	<globalMapLocation>WORLD_MAP_DOMINION</globalMapLocation>
+	<standardPlace>nhom_hotel_ground_floor_lobby</standardPlace>
+	<entryFromGlobalMapLocation>nhom_hotel_ground_floor_lobby</entryFromGlobalMapLocation>
+	<teleportPermissions>BOTH</teleportPermissions>
+	<places>
+		<place colour="#000000">GENERIC_IMPASSABLE</place>
+		<place colour="#e3bfa9">nhom_hotel_ground_floor_elevators</place> <!-- Elevators -->
+		<place colour="#14a055">nhom_hotel_ground_floor_entrance</place> <!-- Entrance -->
+		<place colour="#aaaaaa">nhom_hotel_ground_floor_lobby</place> <!-- Lobby -->
+		<place colour="#b989e2">nhom_hotel_ground_floor_reception</place> <!-- Reception Desk -->
+		<place colour="#d1fcf4">LILAYA_HOME_SPA</place> <!-- Spa Pools -->
+	</places>
+</worldType>

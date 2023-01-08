@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg18"
+   sodipodi:docname="reception.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview20"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="7.9439027"
+     inkscape:cx="12.336506"
+     inkscape:cy="39.338347"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g16" />
+  <defs
+     id="defs8">
+    <linearGradient
+       id="entranceHallGradient">
+      <stop
+         offset="0"
+         stop-color="#f55"
+         id="stop2" />
+      <stop
+         offset="1"
+         stop-color="#ff8080"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient15"
+       x1="29.5"
+       x2="44.125"
+       y1="1025.487"
+       y2="1003.362"
+       gradientTransform="matrix(1.28844 0 0 1.29051 -9.225 -296.313)"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#entranceHallGradient" />
+  </defs>
+  <g
+     transform="translate(0 -988.362)"
+     id="g16">
+    <ellipse
+       cx="32"
+       cy="1020.368"
+       fill="url(#linearGradient15)"
+       fill-rule="evenodd"
+       rx="30.383"
+       ry="30.381"
+       id="ellipse10" />
+    <path
+       style="fill:#ffffff;stroke-linecap:square;paint-order:markers fill stroke"
+       id="path1019"
+       sodipodi:type="arc"
+       sodipodi:cx="-32"
+       sodipodi:cy="-1039.6805"
+       sodipodi:rx="20.561892"
+       sodipodi:ry="20.561892"
+       sodipodi:start="0"
+       sodipodi:end="3.1415927"
+       sodipodi:arc-type="slice"
+       d="m -11.438108,-1039.6805 a 20.561892,20.561892 0 0 1 -10.280946,17.8071 20.561892,20.561892 0 0 1 -20.561892,0 20.561892,20.561892 0 0 1 -10.280946,-17.8071 H -32 Z"
+       transform="scale(-1)" />
+    <circle
+       style="fill:#ffffff;stroke-width:1.56291;stroke-linecap:square;paint-order:markers fill stroke"
+       id="path1123"
+       cx="32"
+       cy="1007.5469"
+       r="10.503477" />
+  </g>
+</svg>

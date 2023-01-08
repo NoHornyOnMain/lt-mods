@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<placeType>
+	<worldRegion>DOMINION</worldRegion>
+	<name><![CDATA[Reception]]></name>
+	<tooltipDescription><![CDATA[The reception desk of the Sapphire Fox.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[in the main lobby area of the Sapphire Fox, by the reception desk]]></virginityLossDescription>
+	<sexBlockedReason/>
+	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
+	<colour>BASE_BLUE</colour>
+	<backgroundColour>MAP_BACKGROUND</backgroundColour>
+	<encounterType>null</encounterType>
+	<dialogue>nhom_hotel_ground_floor_reception</dialogue>
+	<populationPresent/>
+	<globalMapTile>false</globalMapTile>
+	<dangerous><![CDATA[false]]></dangerous>
+	<itemsDisappear><![CDATA[true]]></itemsDisappear>
+	<aquatic><![CDATA[LAND]]></aquatic>
+	<darkness><![CDATA[ALWAYS_LIGHT]]></darkness>
+	<teleportPermissions>BOTH</teleportPermissions>
+	<weatherImmunities immuneToAll="true"/>
+	<applyInventoryInit/>
+</placeType>

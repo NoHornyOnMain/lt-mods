@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<worldType>
+	<worldRegion>DOMINION</worldRegion>
+	<name><![CDATA[Sapphire Fox<br>[player.namePos] Suite]]></name>
+	<colour>BASE_BLUE</colour>
+	<sexBlockedReason/>
+	<furniturePresent>true</furniturePresent>
+	<wallsPresent>true</wallsPresent>
+	<loiteringEnabled>true</loiteringEnabled>
+	<flightEnabled>false</flightEnabled>
+	<visibleFromStart>false</visibleFromStart>
+	<fullyRevealedFromStart>false</fullyRevealedFromStart>
+	<globalMapLocation>WORLD_MAP_DOMINION</globalMapLocation>
+	<standardPlace>nhom_hotel_room_player_entrance</standardPlace>
+	<entryFromGlobalMapLocation>nhom_hotel_room_player_entrance</entryFromGlobalMapLocation>
+	<teleportPermissions>BOTH</teleportPermissions>
+	<places>
+		<place colour="#FF0000">LILAYA_HOME_ROOM_PLAYER</place> <!-- Player Bedroom -->
+		<place colour="#00FF00">nhom_hotel_room_player_entrance</place> <!-- Main Entrance -->
+		<place colour="#0000FF">LILAYA_HOME_ROOM_WINDOW_FIRST_FLOOR</place> <!-- Slave Room -->
+	</places>
+</worldType>
