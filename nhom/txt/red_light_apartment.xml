@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dialogue>
+
+	<htmlContent author="NHOM" tag="dominion_red_light_district"><![CDATA[
+		[#player.getCell().getDialogue(false).getContent()]
+
+		<b style='color:[#COLOUR_BASE_RED.toWebHexString()];'>Red-Light Apartment:</b><br/>
+
+		#IF(player.getAffectionMap().containsKey("nhom_red_light_apartment_has_seen"))
+			Your apartment is nearby
+			#IF(player.hasStatusEffect(SE_nhom_red_light_apartment_rent_paid))
+				, and your rent is paid until [#game.getDisplayDate(game.getDateNow().plusSeconds(player.getStatusEffectDuration(SE_nhom_red_light_apartment_rent_paid)), true)].
+			#ELSE
+				. You are behind on your rent, however, so you cannot currently access it.
+			#ENDIF
+		#ELSE
+			You notice a sign in the window of a nearby building.
+		#ENDIF
+	]]></htmlContent>
+
+	<htmlContent author="NHOM" tag="investigate_rent_sign"><![CDATA[
+		On closer inspection, you can see that the sign reads as follows:<br>
+		<div style="width: 300px; border:3px solid [#COLOUR_BASE_RED.toWebHexString()]; background-color: [#COLOUR_TEXT.toWebHexString()]; color: [#COLOUR_BASE_PITCH_BLACK.toWebHexString()]; text-align: center;">
+			<b>APARTMENT AVAILABLE FOR RENT</b><br>
+			Only [style.moneyFormatUncoloured(, b)]3,750 per month.<br>
+			Ask inside for more information.<br>
+		</div>
+		It seems you could rent an apartment here.
+	]]></htmlContent>
+
+	<htmlContent author="NHOM" tag="rent_paid"><![CDATA[
+		After paying [style.moneyFormat(3,750, b)] for another 30 days of rent, you can now use the apartment until [#game.getDisplayDate(game.getDateNow().plusSeconds(player.getStatusEffectDuration(SE_nhom_red_light_apartment_rent_paid)), true)].
+	]]></htmlContent>
+
+	<htmlContent author="NHOM" tag="entrance"><![CDATA[
+		Standing near the entrance of your apartment, you can see the full contents of the main room.<br>
+		This consists of a kitchen, dining area and living area, each equipped with decent, but clearly inexpensive furnishings.
+	]]></htmlContent>
+
+</dialogue>

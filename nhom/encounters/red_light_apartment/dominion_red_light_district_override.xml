@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<encounterRoot>
+	<additionalPlaceTypeTriggers>
+		<placeType>DOMINION_RED_LIGHT_DISTRICT</placeType>
+	</additionalPlaceTypeTriggers>
+	<possibleEncounters>
+		<encounter>
+			<name><![CDATA[nhom_red_light_apartment_dominion_red_light_district_override]]></name>
+			<chanceToTrigger opportunisticEncounter="false"><![CDATA[
+				#IF (game.getDialogueFlags().hasFlag(FLAG_angelIntroduced))
+					1000
+				#ELSE
+					0
+				#ENDIF
+			]]></chanceToTrigger>
+			<dialogueReturned><![CDATA[nhom_red_light_apartment_dominion_red_light_district]]></dialogueReturned>
+		</encounter>
+	</possibleEncounters>
+</encounterRoot>

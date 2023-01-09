@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<worldType>
+	<worldRegion>DOMINION</worldRegion>
+	<name><![CDATA[Red-Light Apartment]]></name>
+	<colour>BASE_RED</colour>
+	<sexBlockedReason/>
+	<furniturePresent>true</furniturePresent>
+	<wallsPresent>true</wallsPresent>
+	<loiteringEnabled>true</loiteringEnabled>
+	<flightEnabled>false</flightEnabled>
+	<visibleFromStart>false</visibleFromStart>
+	<fullyRevealedFromStart>false</fullyRevealedFromStart>
+	<globalMapLocation>WORLD_MAP_DOMINION</globalMapLocation>
+	<standardPlace>nhom_red_light_apartment_entrance</standardPlace>
+	<entryFromGlobalMapLocation>nhom_red_light_apartment_entrance</entryFromGlobalMapLocation>
+	<teleportPermissions>BOTH</teleportPermissions>
+	<places>
+		<place colour="#ff0000">nhom_red_light_apartment_entrance</place>
+		<place colour="#00ff00">LILAYA_HOME_ROOM_PLAYER</place>
+	</places>
+</worldType>
