@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clothing>
+	<coreAttributes>
+		<authorTag><![CDATA[The letters 'NHOM' have been printed on the bottom of the bag.]]></authorTag>
+		<value>10</value>
+		<determiner><![CDATA[a]]></determiner>
+		<name appendColourName="true"><![CDATA[paper bag]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[paper bags]]></namePlural>
+		<description><![CDATA[A simple paper bag.]]></description>
+		<physicalResistance>0</physicalResistance>
+		<femininity>ANDROGYNOUS</femininity>
+		<equipSlots>
+			<slot>HEAD</slot>
+		</equipSlots>
+		<rarity>COMMON</rarity>
+		<clothingSet/>
+		<imageName>paperbag.svg</imageName>
+		<stickers>
+			<category id="handles" priority="1">
+				<categoryName><![CDATA[Handles]]></categoryName>
+				<sticker id="handles" priority="1" defaultSticker="true" zLayer="1">
+					<stickerName><![CDATA[Yes]]></stickerName>
+					<namePrefix/>
+					<descriptionModification/>
+					<imageName>handles.svg</imageName>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+				<sticker id="no_handles" priority="2" defaultSticker="false" zLayer="1">
+					<stickerName><![CDATA[No]]></stickerName>
+					<namePrefix/>
+					<namePostfix/>
+					<descriptionModification/>
+					<imageName/>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+			</category>
+			<category id="holes" priority="2">
+				<categoryName><![CDATA[Eyeholes]]></categoryName>
+				<sticker id="holes" priority="1" defaultSticker="false" zLayer="10">
+					<stickerName><![CDATA[Yes]]></stickerName>
+					<namePrefix/>
+					<descriptionModification><![CDATA[
+						<br><br>Two eyeholes have been cut into it, allowing someone to still see whilst wearing it on their head.
+					]]></descriptionModification>
+					<imageName>holes.svg</imageName>
+					<itemTagsAdded/>
+					<itemTagsRemoved>
+						<tag>BLOCKS_SIGHT</tag>
+					</itemTagsRemoved>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+				<sticker id="no_holes" priority="2" defaultSticker="true" zLayer="10">
+					<stickerName><![CDATA[No]]></stickerName>
+					<namePrefix/>
+					<namePostfix/>
+					<descriptionModification/>
+					<imageName/>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+			</category>
+			<category id="eyes" priority="1">
+				<categoryName><![CDATA[Eyes]]></categoryName>
+				<sticker id="eyes_none" priority="1" defaultSticker="true" zLayer="2">
+					<stickerName><![CDATA[None]]></stickerName>
+					<namePrefix/>
+					<descriptionModification/>
+					<imageName/>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+				<sticker id="eyes_simple" priority="2" defaultSticker="false" zLayer="2">
+					<stickerName><![CDATA[Simple]]></stickerName>
+					<namePrefix/>
+					<namePostfix/>
+					<descriptionModification/>
+					<imageName>eyes_simple.svg</imageName>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+			</category>
+			<category id="mouth" priority="1">
+				<categoryName><![CDATA[Mouth]]></categoryName>
+				<sticker id="mouth_none" priority="1" defaultSticker="true" zLayer="3">
+					<stickerName><![CDATA[None]]></stickerName>
+					<namePrefix/>
+					<descriptionModification/>
+					<imageName/>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+				<sticker id="mouth_simple_smile" priority="2" defaultSticker="false" zLayer="3">
+					<stickerName><![CDATA[Simple Smile]]></stickerName>
+					<namePrefix/>
+					<namePostfix/>
+					<descriptionModification/>
+					<imageName>mouth_simple_smile.svg</imageName>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+				<sticker id="mouth_simple_frown" priority="3" defaultSticker="false" zLayer="3">
+					<stickerName><![CDATA[Simple Frown]]></stickerName>
+					<namePrefix/>
+					<namePostfix/>
+					<descriptionModification/>
+					<imageName>mouth_simple_frown.svg</imageName>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+			</category>
+			<category id="eyebrows" priority="1">
+				<categoryName><![CDATA[Eyebrows]]></categoryName>
+				<sticker id="eyebrows_none" priority="1" defaultSticker="true" zLayer="4">
+					<stickerName><![CDATA[None]]></stickerName>
+					<namePrefix/>
+					<descriptionModification/>
+					<imageName/>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+				<sticker id="eyebrows_simple_angry" priority="2" defaultSticker="false" zLayer="4">
+					<stickerName><![CDATA[Simple Angry]]></stickerName>
+					<namePrefix/>
+					<namePostfix/>
+					<descriptionModification/>
+					<imageName>eyebrows_simple_angry.svg</imageName>
+					<itemTagsAdded/>
+					<itemTagsRemoved/>
+					<unavailabilityText/>
+					<availabilityText/>
+				</sticker>
+			</category>
+		</stickers>
+		<enchantmentLimit/>
+		<effects/>
+		<blockedPartsList>
+			<blockedParts>
+				<displacementType>REMOVE_OR_EQUIP</displacementType>
+				<clothingAccessRequired/>
+				<blockedBodyParts>
+					<bodyPart>HAIR</bodyPart>
+					<bodyPart>MOUTH</bodyPart>
+				</blockedBodyParts>
+				<clothingAccessBlocked/>
+				<concealedSlots>
+					<slot>EYES</slot>
+					<slot>HAIR</slot>
+					<slot>MOUTH</slot>
+				</concealedSlots>
+			</blockedParts>
+		</blockedPartsList>
+		<incompatibleSlots/>
+		<primaryColours>
+			<colour>CLOTHING_TAN</colour>
+		</primaryColours>
+		<primaryColoursDye values="ALL"/>
+		<secondaryColours>
+			<colour>CLOTHING_TAN</colour>
+		</secondaryColours>
+		<secondaryColoursDye values="ALL"/>
+		<tertiaryColours>
+			<colour>CLOTHING_BLACK_JET</colour>
+		</tertiaryColours>
+		<tertiaryColoursDye values="ALL"/>
+		<defaultPatterns colourNameDerivedFromPattern="true"/>
+		<patternPrimaryColours values="ALL"/>
+		<patternSecondaryColours values="ALL"/>
+		<patternTertiaryColours values="ALL"/>
+		<customPatternColours/>
+		<itemTags>
+			<tag>BLOCKS_SIGHT</tag>
+			<tag>SOLD_BY_RALPH</tag>
+		</itemTags>
+	</coreAttributes>
+	<sexAttributesSelf/>
+	<sexAttributesOther/>
+	<replacementText slot="head" type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(place)] the bag onto [npc.her] head.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(place)] the bag onto [npc2.namePos] head.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] roughly [npc.verb(pull)] the bag onto [npc2.namePos] head.]]>
+		</otherRough>
+	</replacementText>
+	<displacementText slot="head" type="REMOVE_OR_EQUIP">
+		<self>
+			<![CDATA[[npc.Name] [npc.verb(remove)] the bag from [npc.her] head.]]>
+		</self>
+		<other>
+			<![CDATA[[npc.Name] [npc.verb(remove)] the bag from [npc2.namePos] head.]]>
+		</other>
+		<otherRough>
+			<![CDATA[[npc.Name] roughly [npc.verb(pull)] the bag off [npc2.namePos] head.]]>
+		</otherRough>
+	</displacementText>
+</clothing>
